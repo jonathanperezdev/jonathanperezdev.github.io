@@ -361,7 +361,7 @@
               <li>Guide to team members with less seniority to understand the business requirements exposed by our product owner</li>
               <li>Explain the architecture of Spring Cloud and best practices in microservices creation behind this framework</li>
               <li>Support designs of implementations to stakeholders as well as architecture groups in Globant.</li>
-              <li>Validate code implementation of our team members with the code review process<li>
+              <li>Validate code implementation of our team members with the code review process</li>
               <li>Configuration of Develop and QA environments</li>
               <li>Support the branching strategy as well as production deployment of our features.</li>
               <li><b>Tools:</b> Java, Functional Programing, Redis, Spring Cloud (Configuration, Gateway and Service Discovery)</li>              
@@ -430,25 +430,24 @@
 
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Personal Projects</h3>
+      <h3 class="page-title white-text teal">Personal Github Repositories</h3>
       <div class="container">
         <div class="row">
 
+          <!-- Business Manager Project -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="music streaming app" src="/assets/img/project_spring-cloud_Netflix.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Business Manager - Spring Cloud<i
+                <span class="card-title activator teal-text hoverline">Business Manager<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
                   An application designed to calculate worked hours for employees in Colombia 
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
@@ -458,7 +457,7 @@
                   <li>Redis cahe for parameters</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/jonathanperezdev/business-manager-execute"
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/jonathanperezdev/business-manager-horario"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -467,10 +466,11 @@
             </div>
           </div>
 
+          <!-- Axon CQRS EventSourcing -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="quiz app" src="/assets/img/project_axon.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Accounting<i
@@ -480,16 +480,49 @@
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
+                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
                   <li><b>Tools:</b> Spring, Axon, PostgreSQL</li>
                   <li>Based on Events user can create an account, activate, debit an credit</li>
+                  <li>This repository was created based on 
+                    <a href="https://progressivecoder.com/implementing-event-sourcing-using-axon-and-spring-boot-part-1/">EventSourcing Tutorial</a>
+                    <a href="https://progressivecoder.com/event-sourcing-and-cqrs-with-axon-and-spring-boot-part-1/">CQRS Tutorial</a>
+                  </li>
                 </ul>
                 <div class="card-action">                  
                   <a aria-label="Visit the GitHub repo for  project" href="https://github.com/jonathanperezdev/accounting"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spring Security PosgreSQL JWT -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/project_spring_security_postgresql.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Spring-security-postgres<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Example of Spring Security with Postgresql and JWT Token
+                </p>
+              </div>
+              <div class="card-reveal">
+                 <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Spring Security, PostgreSQL, JWT</li>
+                  <li>This project contains an example of Spring Security that stores users, and roles in a Postgresql database, the idea is, after create a user endpoint, you can use logging endpoint and it will give you a JWT Token, this token is sent in all request to the server who validates the JWT Token and extracts the user id to validate if this user exist in our application, this process is performed in AuthTokenFilter class</li>                  
+                  <li>This example is based on <a href="https://www.bezkoder.com/spring-boot-security-postgresql-jwt-authentication/">spring-boot-security-postgresql-jwt-authentication</a></li>
+                </ul>
+                <div class="card-action">                  
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/jonathanperezdev/spring-security-postgres"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
